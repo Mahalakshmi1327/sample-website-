@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Helmet for Coal Miners</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- TOP PROGRESS BAR -->
+    <div class="topbar">
+        <div class="topbar-fill" id="progress"></div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════════════
+       SLIDE 1 — TITLE
+  ════════════════════════════════════════════════════════════ -->
+    <div class="slide active" id="s1">
+        <div class="helmet-icon">⛑️</div>
+        <div class="title-main">SMART HELMET</div>
+        <div class="title-sub">For Coal Mine Safety</div>
+        <div class="title-badge">
+            <div class="badge">🔬 IoT ENABLED</div>
+            <div class="badge">📡 REAL-TIME MONITORING</div>
+            <div class="badge">🚨 AUTO ALERT</div>
+        </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════════════
+       SLIDE 2 — THE PROBLEM
+  ════════════════════════════════════════════════════════════ -->
+    <div class="slide" id="s2">
+        <div class="slide-title">THE PROBLEM</div>
+        <div class="slide-line"></div>
+
+        <div class="problem-grid">
+            <div class="prob-card">
+                <div class="prob-icon">💨</div>
+                <div>
+                    <div class="prob-title">Toxic Gas Exposure</div>
+                    <div class="prob-desc">Methane &amp; CO gas buildup causes explosion and suffocation — undetected until too late</div>
+                </div>
+            </div>
+            <div class="prob-card">
+                <div class="prob-icon">🌡️</div>
+                <div>
+                    <div class="prob-title">Extreme Heat</div>
+                    <div class="prob-desc">Underground temperatures exceed 40°C — heat stroke risk with no real-time monitoring</div>
+                </div>
+            </div>
+            <div class="prob-card">
+                <div class="prob-icon">📍</div>
+                <div>
+                    <div class="prob-title">No Location Tracking</div>
+                    <div class="prob-desc">Workers trapped underground cannot be located during collapse or emergency</div>
+                </div>
+            </div>
+            <div class="prob-card">
+                <div class="prob-icon">🩺</div>
+                <div>
+                    <div class="prob-title">Health Monitoring Gap</div>
+                    <div class="prob-desc">Heart rate &amp; oxygen drop unnoticed — no system to detect worker distress</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="stat-bar">
+            <div class="stat">
+                <div class="stat-num">6,000+</div>
+                <div class="stat-label">DEATHS PER YEAR</div>
+            </div>
+            <div class="stat">
+                <div class="stat-num">80%</div>
+                <div class="stat-label">PREVENTABLE</div>
+            </div>
+            <div class="stat">
+                <div class="stat-num">₹2.1Cr</div>
+                <div class="stat-label">LOSS PER ACCIDENT</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════════════
+       SLIDE 3 — OUR SOLUTION
+  ════════════════════════════════════════════════════════════ -->
+    <div class="slide" id="s3">
+        <div class="slide-title">OUR SOLUTION</div>
+        <div class="slide-line"></div>
+
+        <div class="sol-layout">
+            <!-- Helmet SVG Diagram -->
+            <div class="helmet-diagram">
+                <svg class="helmet-svg" viewBox="0 0 220 220" xmlns="http://www.w3.org/2000/svg">
+          <!-- Shadow -->
+          <ellipse cx="110" cy="130" rx="90" ry="18"
+                   fill="rgba(245,158,11,0.08)" stroke="rgba(245,158,11,0.2)" stroke-width="1"/>
+          <!-- Dome -->
+          <path d="M30,130 Q30,60 110,50 Q190,60 190,130 Z"
+                fill="#1a1f2e" stroke="#f59e0b" stroke-width="2"/>
+          <path d="M20,130 Q20,55 110,42 Q200,55 200,130 L190,130 Q190,60 110,50 Q30,60 30,130 Z"
+                fill="rgba(245,158,11,0.1)"/>
+          <!-- Brim -->
+          <rect x="15" y="128" width="190" height="14" rx="4"
+                fill="#1a1f2e" stroke="#f59e0b" stroke-width="1.5"/>
+          <!-- LED strip -->
+          <rect x="30" y="125" width="80" height="4" rx="2" fill="#f59e0b" opacity="0.9">
+            <animate attributeName="opacity" values="0.9;0.3;0.9" dur="1.5s" repeatCount="indefinite"/>
+          </rect>
+          <!-- Gas sensor -->
+          <circle cx="80" cy="85" r="8" fill="#161b22" stroke="#3b82f6" stroke-width="2">
+            <animate attributeName="stroke" values="#3b82f6;#22c55e;#3b82f6" dur="2s" repeatCount="indefinite"/>
+          </circle>
+          <text x="80" y="89" font-size="8" fill="#3b82f6" text-anchor="middle" font-family="monospace">GAS</text>
+          <!-- Temperature sensor -->
+          <circle cx="140" cy="75" r="8" fill="#161b22" stroke="#ef4444" stroke-width="2">
+            <animate attributeName="stroke" values="#ef4444;#f59e0b;#ef4444" dur="1.8s" repeatCount="indefinite"/>
+          </circle>
+          <text x="140" y="79" font-size="8" fill="#ef4444" text-anchor="middle" font-family="monospace">TMP</text>
+          <!-- GPS -->
+          <circle cx="110" cy="65" r="8" fill="#161b22" stroke="#22c55e" stroke-width="2"/>
+          <text x="110" y="69" font-size="7" fill="#22c55e" text-anchor="middle" font-family="monospace">GPS</text>
+          <!-- Heart rate -->
+          <circle cx="60" cy="110" r="7" fill="#161b22" stroke="#a855f7" stroke-width="2"/>
+          <text x="60" y="114" font-size="6" fill="#a855f7" text-anchor="middle" font-family="monospace">HR</text>
+          <!-- RF module -->
+          <circle cx="165" cy="105" r="7" fill="#161b22" stroke="#f59e0b" stroke-width="2"/>
+          <text x="165" y="109" font-size="7" fill="#f59e0b" text-anchor="middle" font-family="monospace">RF</text>
+          <!-- Connector lines -->
+          <line x1="88"  y1="85"  x2="100" y2="90"  stroke="rgba(59,130,246,0.4)"  stroke-width="1" stroke-dasharray="3,2"/>
+          <line x1="132" y1="75"  x2="120" y2="85"  stroke="rgba(239,68,68,0.4)"   stroke-width="1" stroke-dasharray="3,2"/>
+          <line x1="67"  y1="110" x2="100" y2="100" stroke="rgba(168,85,247,0.4)"  stroke-width="1" stroke-dasharray="3,2"/>
+          <line x1="158" y1="105" x2="130" y2="95"  stroke="rgba(245,158,11,0.4)"  stroke-width="1" stroke-dasharray="3,2"/>
+        </svg>
+            </div>
+
+            <!-- Feature list -->
+            <div class="feature-lines">
+                <div class="feat-line">
+                    <div class="feat-dot" style="background:#3b82f6; box-shadow:0 0 8px #3b82f6;"></div>
+                    <div>
+                        <div class="feat-name">Gas Sensor (MQ-2/MQ-7)</div>
+                        <div class="feat-desc">Detects CH₄, CO, LPG in real-time</div>
+                    </div>
+                </div>
+                <div class="feat-line">
+                    <div class="feat-dot" style="background:#ef4444; box-shadow:0 0 8px #ef4444;"></div>
+                    <div>
+                        <div class="feat-name">Temperature Sensor</div>
+                        <div class="feat-desc">DHT11 — heat &amp; humidity monitoring</div>
+                    </div>
+                </div>
+                <div class="feat-line">
+                    <div class="feat-dot" style="background:#22c55e; box-shadow:0 0 8px #22c55e;"></div>
+                    <div>
+                        <div class="feat-name">GPS Module</div>
+                        <div class="feat-desc">Real-time location tracking underground</div>
+                    </div>
+                </div>
+                <div class="feat-line">
+                    <div class="feat-dot" style="background:#a855f7; box-shadow:0 0 8px #a855f7;"></div>
+                    <div>
+                        <div class="feat-name">Pulse Oximeter</div>
+                        <div class="feat-desc">Heart rate + SpO₂ health monitor</div>
+                    </div>
+                </div>
+                <div class="feat-line">
+                    <div class="feat-dot" style="background:#f59e0b; box-shadow:0 0 8px #f59e0b;"></div>
+                    <div>
+                        <div class="feat-name">Arduino + GSM/RF</div>
+                        <div class="feat-desc">Data processing &amp; wireless alert system</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════════════
+       SLIDE 4 — HOW IT WORKS
+  ════════════════════════════════════════════════════════════ -->
+    <div class="slide" id="s4">
+        <div class="slide-title">HOW IT WORKS</div>
+        <div class="slide-line"></div>
+
+        <div class="flow-steps">
+            <div class="flow-step">
+                <div class="step-icon">🔩</div>
+                <div class="step-title">SENSORS</div>
+                <div class="step-desc">Collect gas, temp, pulse, location data</div>
+            </div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-step">
+                <div class="step-icon">🖥️</div>
+                <div class="step-title">ARDUINO</div>
+                <div class="step-desc">Processes &amp; compares sensor readings</div>
+            </div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-step">
+                <div class="step-icon">📡</div>
+                <div class="step-title">TRANSMIT</div>
+                <div class="step-desc">GSM/RF sends data to control room</div>
+            </div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-step">
+                <div class="step-icon">🚨</div>
+                <div class="step-title">ALERT</div>
+                <div class="step-desc">Buzzer + LED + SMS alarm triggered</div>
+            </div>
+        </div>
+
+        <div class="threshold-box">
+            <div class="threshold-title">THRESHOLD VALUES</div>
+            <div class="threshold-values">
+                <div class="thresh-item">💨 CH₄ <span>≥ 1% LEL</span></div>
+                <div class="thresh-item">🌡️ Temp <span>≥ 38°C</span></div>
+                <div class="thresh-item">❤️ HR <span>&lt; 50 or &gt; 120</span></div>
+                <div class="thresh-item">🫁 SpO₂ <span>&lt; 94%</span></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════════════
+       SLIDE 5 — LIVE SENSOR DASHBOARD
+  ════════════════════════════════════════════════════════════ -->
+    <div class="slide" id="s5">
+        <div class="slide-title">LIVE SENSOR DASHBOARD</div>
+        <div class="slide-line"></div>
+
+        <div class="demo-panel">
+            <div class="sensor-card">
+                <div class="sensor-label">GAS LEVEL (CH₄)</div>
+                <div class="sensor-val" id="gas-val" style="color:#f59e0b;">0.3%</div>
+                <div class="sensor-bar">
+                    <div class="sensor-fill" id="gas-bar" style="width:15%; background:#f59e0b;"></div>
+                </div>
+            </div>
+            <div class="sensor-card">
+                <div class="sensor-label">TEMPERATURE</div>
+                <div class="sensor-val" id="temp-val" style="color:#3b82f6;">34°C</div>
+                <div class="sensor-bar">
+                    <div class="sensor-fill" id="temp-bar" style="width:55%; background:#3b82f6;"></div>
+                </div>
+            </div>
+            <div class="sensor-card">
+                <div class="sensor-label">HEART RATE</div>
+                <div class="sensor-val blink" id="hr-val" style="color:#22c55e;">78 BPM</div>
+                <div class="sensor-bar">
+                    <div class="sensor-fill" id="hr-bar" style="width:60%; background:#22c55e;"></div>
+                </div>
+            </div>
+            <div class="sensor-card">
+                <div class="sensor-label">SpO₂ OXYGEN</div>
+                <div class="sensor-val" id="spo2-val" style="color:#22c55e;">98%</div>
+                <div class="sensor-bar">
+                    <div class="sensor-fill" id="spo2-bar" style="width:98%; background:#22c55e;"></div>
+                </div>
+            </div>
+
+            <div class="alert-box" id="alert-box" style="display:none;">
+                <div class="alert-icon">🚨</div>
+                <div class="alert-text">
+                    <div class="alert-title">⚠️ DANGER ALERT — EVACUATE ZONE 3B</div>
+                    <div class="alert-sub">Gas level critical! SMS sent to control room. Buzzer activated.</div>
+                </div>
+            </div>
+
+            <div class="demo-buttons">
+                <button class="btn-normal" onclick="simulateNormal()">▶ NORMAL MODE</button>
+                <button class="btn-danger" onclick="simulateDanger()">⚠️ SIMULATE DANGER</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════════════
+       SLIDE 6 — IMPACT & FUTURE SCOPE
+  ════════════════════════════════════════════════════════════ -->
+    <div class="slide" id="s6">
+        <div class="slide-title">IMPACT &amp; FUTURE SCOPE</div>
+        <div class="slide-line"></div>
+
+        <div class="impact-grid">
+            <div class="impact-card">
+                <div class="impact-num">80%</div>
+                <div class="impact-label">Reduction in accident response time with instant alerts</div>
+            </div>
+            <div class="impact-card">
+                <div class="impact-num">24/7</div>
+                <div class="impact-label">Continuous health &amp; environment monitoring for every miner</div>
+            </div>
+            <div class="impact-card">
+                <div class="impact-num">₹800</div>
+                <div class="impact-label">Low-cost prototype — affordable for all mine operations</div>
+            </div>
+        </div>
+
+        <div class="future-box">
+            <div class="future-title">FUTURE ENHANCEMENTS</div>
+            <div class="future-tags">
+                <span class="future-tag">📱 Mobile App</span>
+                <span class="future-tag">🤖 AI Prediction</span>
+                <span class="future-tag">☁️ Cloud Dashboard</span>
+                <span class="future-tag">🔋 Solar Powered</span>
+                <span class="future-tag">🗺️ Indoor Mapping</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════════════
+       NAVIGATION BAR
+  ════════════════════════════════════════════════════════════ -->
+    <div class="nav">
+        <button class="nav-btn" onclick="prevSlide()">← PREV</button>
+        <div class="nav-dots" id="dots"></div>
+        <span class="slide-counter" id="counter">1 / 6</span>
+        <button class="nav-btn" onclick="nextSlide()">NEXT →</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
